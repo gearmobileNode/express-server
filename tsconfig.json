@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ESNext",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}
