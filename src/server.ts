@@ -1,13 +1,14 @@
 import express from 'express';
 import { config } from 'dotenv';
 
-const PORT = process.env.PORT || 5000;
+const PORT = Number(process.env.PORT) || 5000;
 
-config();
+config({ override: true });
 
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello!');
+
+app.get('/', (_, res) => {
+  res.send('Hello from Express!');
 });
 
 app.listen(PORT, () => {
