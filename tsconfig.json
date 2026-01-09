@@ -1,16 +1,33 @@
 {
   "compilerOptions": {
+    // Other Outputs
     "sourceMap": true,
-    "target": "ESNext",
+
+    // File Layout
     "outDir": "./dist",
     "baseUrl": "./src",
+    "removeComments": true,
+
+    // Environment Settings
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "types": ["node"],
     "module": "nodenext",
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+
+    // Recommended Options
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
 }
